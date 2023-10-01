@@ -1,30 +1,22 @@
 {
    "lambdatest_auth": {
-      "username": "<Your LambdaTest username>",
-      "access_key": "<Your LambdaTest access key>"
+      "username": "thezentking",
+      "access_key": "L0qJFFJ2JF6Peu4mIvSQZn9KjsdevRUkBFl2maWpHnEIxVc9kA"
    },
    "browsers": [
       {
-         "browser": "Chrome",
-         "platform": "Windows 10",
-         "versions": [
-            "latest-1"
-         ]
-      },
-      {
-         "browser": "Firefox",
-         "platform": "Windows 10",
-         "versions": [
-            "latest-1"
-         ]
+        "browser": "Chrome",
+        "versions": ["118.0"],
+        "platform": "Windows 10"
       }
+      
    ],
    "run_settings": {
       "cypress_config_file": "cypress.json",
       "reporter_config_file": "base_reporter_config.json",
-      "build_name": "build-name",
+      "build_name": "Integration_LambdaTest2",
       "parallels": 1,
-      "specs": "<path_of_cypress_spec_files>",
+      "specs": "./cypress/e2e/homePcFactory.cy.js",
       "ignore_files": "",
       "network": false,
       "headless": false,
@@ -37,3 +29,5 @@
       "tunnel_name": null
    }
 }
+
+
