@@ -5,20 +5,22 @@
    },
    "browsers": [
       {
-        "browser": "Chrome",
-        "versions": ["118.0"],
-        "platform": "Windows 10"
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
       }
       
    ],
    "run_settings": {
-      "cypress_config_file": "cypress.json",
+      "cypress_config_file": "package.json",
       "reporter_config_file": "base_reporter_config.json",
-      "build_name": "Integration_LambdaTest2",
+      "build_name": "MiPrimerLambdaTest",
       "parallels": 1,
       "specs": "./cypress/e2e/homePcFactory.cy.js",
       "ignore_files": "",
-      "network": false,
+      "network": true,
       "headless": false,
       "npm_dependencies": {
          "cypress": "9.6"
@@ -29,5 +31,3 @@
       "tunnel_name": null
    }
 }
-
-
